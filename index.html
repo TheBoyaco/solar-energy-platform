@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energy Solar J.D SAS | Energía Solar en Granada Meta</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Energy Solar J.D SAS. Diseño e instalación de sistemas de energía solar para hogares, fincas y empresas en Granada Meta y Colombia. Ahorra hasta un 40% en tu factura de energía.">
+  <meta name="keywords" content="energía solar Granada Meta, paneles solares, sistemas solares fotovoltaicos, instalación solar Colombia, ahorro de energía, Energy Solar JD">
+  <meta name="author" content="Energy Solar J.D SAS">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Energy Solar J.D SAS | Energía Solar en Granada Meta">
+  <meta property="og:description" content="Instalamos sistemas solares profesionales para hogares, fincas y empresas. Ahorra en tu factura y cuida el planeta.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:url" content="https://energysolarjd.com">
+  <meta property="og:image" content="https://i.ibb.co/gLQnwXDM/Whats-App-Image-2025-12-10-at-15-13-03.jpg">
+  <meta property="og:email" content="contacto@energysolarjd.com">
+
+  <!-- Schema: negocio local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Energy Solar J.D SAS",
+    "image": "https://i.ibb.co/gLQnwXDM/Whats-App-Image-2025-12-10-at-15-13-03.jpg",
+    "description": "Diseño e instalación de sistemas de energía solar para hogares, fincas y empresas en Granada Meta y Colombia.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Granada",
+      "addressRegion": "Meta",
+      "addressCountry": "CO"
+    },
+    "telephone": "+57 3102062936",
+    "email": "contacto@energysolarjd.com",
+    "areaServed": "Colombia",
+    "url": "https://energysolarjd.com"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-card: #020617;
+      --bg-card-soft: #0b1220;
+      --accent-yellow: #facc15;
+      --accent-orange: #f97316;
+      --accent-cyan: #22d3ee;
+      --accent-cyan-soft: #0ea5e9;
+      --text-main: #e5e7eb;
+      --text-muted: #94a3b8;
+      --border-soft: rgba(148, 163, 184, 0.25);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #020617 0, #000 55%);
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(2, 6, 23, 0.9);
+      border-bottom: 1px solid rgba(148,163,184,0.25);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-box img {
+      width: 50px;
+      height: 50px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 2px solid var(--accent-cyan-soft);
+      background: #020617;
+      cursor: pointer;
+    }
+
+    .logo-text-main {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .logo-text-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      color: var(--text-muted);
+    }
+
+    nav a:hover {
+      background: rgba(148,163,184,0.18);
+      color: var(--text-main);
+    }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: radial-gradient(circle at top left, var(--accent-yellow), var(--accent-orange));
+      color: #020617;
+      box-shadow: 0 0 18px rgba(250, 204, 21, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--accent-cyan-soft);
+      color: var(--accent-cyan-soft);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 25px rgba(15,23,42,0.8);
+    }
+
+    /* Mobile menu */
+    .menu-toggle {
+      display: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      gap: 0.3rem;
+      padding: 0.5rem 1rem 0.8rem;
+      border-top: 1px solid rgba(148,163,184,0.25);
+      background: rgba(2,6,23,0.98);
+    }
+
+    .mobile-nav a {
+      padding: 0.45rem 0.6rem;
+      border-radius: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .mobile-nav a:hover {
+      background: rgba(148,163,184,0.18);
+      color: var(--text-main);
+    }
+
+    /* MAIN LAYOUT */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    section {
+      margin-top: 3rem;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-sub {
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 2rem;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(34,211,238,0.5);
+      background: radial-gradient(circle at left, rgba(34,211,238,0.22), transparent);
+      color: var(--accent-cyan);
+      margin-bottom: 0.6rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+      line-height: 1.1;
+      margin-bottom: 0.7rem;
+    }
+
+    .hero h1 span {
+      color: var(--accent-yellow);
+    }
+
+    .hero p {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-eslogan {
+      background: rgba(15,23,42,0.95);
+      border-radius: 0.7rem;
+      border-left: 4px solid var(--accent-cyan-soft);
+      padding: 0.8rem 1rem;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-eslogan strong {
+      color: #fef3c7;
+    }
+
+    .hero-kpis {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      font-size: 0.85rem;
+      margin: 1rem 0;
+    }
+
+    .hero-kpis div {
+      border-left: 2px solid rgba(148,163,184,0.6);
+      padding-left: 0.6rem;
+    }
+
+    .hero-kpis span {
+      display: block;
+      font-size: 1rem;
+      color: var(--accent-cyan-soft);
+      font-weight: 600;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.3rem;
+    }
+
+    .hero-visual {
+      border-radius: 1.2rem;
+      overflow: hidden;
+      background: #020617;
+      border: 1px solid rgba(56,189,248,0.4);
+      box-shadow: 0 18px 40px rgba(15,23,42,0.9);
+      min-height: 260px;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      display: block;
+      transform: scale(1.02);
+      transition: transform 0.4s ease;
+    }
+
+    .hero-visual img:hover {
+      transform: scale(1.06);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: minmax(0,1fr);
+      }
+    }
+
+    /* GRID / CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .card {
+      background: radial-gradient(circle at top, #0b1120, #020617);
+      border-radius: 1rem;
+      padding: 1.1rem 1rem;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 18px 40px rgba(15,23,42,0.7);
+    }
+
+    .card h3 {
+      font-size: 1.03rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .card-icon {
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-img {
+      border-radius: 0.9rem;
+      overflow: hidden;
+      margin-bottom: 0.6rem;
+      border: 1px solid rgba(56,189,248,0.4);
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      cursor: pointer;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .project-img img:hover {
+      transform: scale(1.06);
+    }
+
+    /* GALERÍA EDITABLE */
+    .gallery-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    /* CALCULADORA DE AHORRO */
+    .calculator {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .calc-box {
+      background: var(--bg-card-soft);
+      border-radius: 1rem;
+      padding: 1.1rem 1rem;
+      border: 1px solid var(--border-soft);
+    }
+
+    .calc-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .calc-input {
+      margin: 0.8rem 0;
+    }
+
+    .calc-input label {
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .calc-input span {
+      font-weight: 600;
+      color: var(--accent-cyan-soft);
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .calc-results {
+      font-size: 0.9rem;
+      margin-top: 0.6rem;
+    }
+
+    .calc-results strong {
+      color: #bbf7d0;
+    }
+
+    @media (max-width: 900px) {
+      .calculator {
+        grid-template-columns: minmax(0,1fr);
+      }
+    }
+
+    /* PROCESO */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 1rem;
+      counter-reset: paso;
+    }
+
+    .step {
+      background: rgba(15,23,42,0.9);
+      border-radius: 1rem;
+      padding: 1rem;
+      border: 1px dashed rgba(148,163,184,0.7);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step::before {
+      counter-increment: paso;
+      content: "0" counter(paso);
+      position: absolute;
+      top: 0.5rem;
+      right: 0.7rem;
+      font-size: 2.2rem;
+      color: rgba(15,23,42,0.7);
+      font-weight: 700;
+    }
+
+    .step h3 {
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .step p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* TESTIMONIOS */
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 1.3rem;
+    }
+
+    .testimonial {
+      background: var(--bg-card-soft);
+      border-radius: 1rem;
+      padding: 1rem;
+      border: 1px solid var(--border-soft);
+      font-size: 0.9rem;
+      position: relative;
+    }
+
+    .testimonial::before {
+      content: "“";
+      position: absolute;
+      font-size: 3rem;
+      color: rgba(148,163,184,0.2);
+      top: -0.4rem;
+      left: 0.4rem;
+    }
+
+    .testimonial-name {
+      margin-top: 0.6rem;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .testimonial-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* FAQ */
+    .faq-item {
+      background: var(--bg-card-soft);
+      border-radius: 0.9rem;
+      border: 1px solid var(--border-soft);
+      margin-bottom: 0.6rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 0.7rem 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .faq-question span {
+      margin-right: 0.6rem;
+    }
+
+    .faq-answer {
+      padding: 0 0.9rem 0.8rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: none;
+    }
+
+    /* CONTACTO */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .contact-form {
+      background: var(--bg-card-soft);
+      border-radius: 1rem;
+      padding: 1.1rem 1rem;
+      border: 1px solid var(--border-soft);
+    }
+
+    .contact-form h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .contact-form label {
+      font-size: 0.82rem;
+      margin-bottom: 0.2rem;
+      display: block;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      width: 100%;
+      padding: 0.6rem 0.7rem;
+      border-radius: 0.6rem;
+      border: 1px solid rgba(148,163,184,0.5);
+      background: #020617;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      margin-bottom: 0.7rem;
+      outline: none;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .contact-info p {
+      margin-bottom: 0.35rem;
+    }
+
+    .contact-info strong {
+      color: var(--text-main);
+    }
+
+    iframe {
+      border-radius: 0.8rem;
+      border: 1px solid var(--border-soft);
+      width: 100%;
+      height: 200px;
+    }
+
+    @media (max-width: 900px) {
+      .contact-wrapper {
+        grid-template-columns: minmax(0,1fr);
+      }
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.25);
+      padding: 1.2rem 1rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: #020617;
+    }
+
+    /* BOTÓN WHATSAPP FLOTANTE */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      z-index: 60;
+    }
+
+    .whatsapp-float a {
+      width: 50px;
+      height: 50px;
+      border-radius: 999px;
+      background: #22c55e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      box-shadow: 0 12px 30px rgba(22,163,74,0.8);
+    }
+
+    .whatsapp-float a:hover {
+      transform: translateY(-1px);
+    }
+
+    /* BOTÓN VOLVER ARRIBA */
+    #backToTop {
+      position: fixed;
+      right: 20px;
+      bottom: 80px;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.95);
+      border: 1px solid rgba(148,163,184,0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+      z-index: 55;
+      color: var(--text-main);
+    }
+
+    /* LIGHTBOX */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 92%;
+      max-height: 92%;
+      border-radius: 0.8rem;
+      box-shadow: 0 22px 60px rgba(0,0,0,0.9);
+    }
+
+    #lightbox-close {
+      position: fixed;
+      top: 18px;
+      right: 22px;
+      font-size: 1.7rem;
+      color: #e5e7eb;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .zoomable {
+      cursor: zoom-in;
+    }
+
+    /* PRODUCTOS */
+    .product-price {
+      font-weight: 700;
+      color: #facc15;
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+    }
+
+    .product-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    /* EFECTO FADE-IN */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-box fade-in">
+      <img class="zoomable" src="https://i.ibb.co/gLQnwXDM/Whats-App-Image-2025-12-10-at-15-13-03.jpg" alt="Energy Solar J.D SAS logo">
+      <div>
+        <div class="logo-text-main">Energy Solar J.D SAS</div>
+        <div class="logo-text-sub">Granada, Meta · Soluciones solares para hogares, fincas y empresas</div>
+      </div>
+    </div>
+
+    <nav class="fade-in">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#ahorro">Calcula tu ahorro</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#galeria">Galería</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-cta fade-in">
+      <a href="https://wa.me/573102062936?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20sistema%20solar"
+         class="btn btn-primary">Cotiza por WhatsApp</a>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#ahorro">Calcula tu ahorro</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="fade-in">
+      <div class="hero-tag">
+        <span>⚡ Energía solar inteligente</span>
+        <span>Granada · Meta</span>
+      </div>
+
+      <h1>
+        Ahorra en tu factura de energía con
+        <span>soluciones solares profesionales</span>.
+      </h1>
+
+      <p>
+        Diseñamos e instalamos sistemas de energía solar a la medida de tu hogar,
+        finca o empresa. Nos encargamos de todo: estudio, diseño, instalación y mantenimiento.
+      </p>
+
+      <div class="hero-eslogan">
+        🔆 <strong>Transformamos la energía del sol en soluciones sostenibles para tu hogar y negocio.</strong><br>
+        Apostamos por la innovación en energía solar para reducir tu huella de carbono y proteger el
+        medio ambiente.♻️🌍 <br>
+        <strong>¡Invierte en un futuro más limpio y eficiente!</strong>
+      </div>
+
+      <div class="hero-kpis">
+        <div>
+          <span>+50</span>
+          Proyectos ejecutados entre hogares, fincas y empresas.
+        </div>
+        <div>
+          <span>30–40%</span>
+          Ahorro estimado en la factura de energía según el consumo.
+        </div>
+        <div>
+          <span>Granada Meta</span>
+          Atención directa en Meta y proyectos en toda Colombia.
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="https://wa.me/573102062936?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20de%20paneles%20solares"
+           class="btn btn-primary">Quiero una cotización</a>
+        <a href="#ahorro" class="btn btn-outline">Calcular mi ahorro</a>
+      </div>
+    </div>
+
+    <div class="hero-visual fade-in">
+      <img class="zoomable"
+           src="https://images.pexels.com/photos/9875442/pexels-photo-9875442.jpeg?auto=compress&cs=tinysrgb&w=1200"
+           alt="Instalación de paneles solares en techo">
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="fade-in">
+    <h2>Servicios de Energy Solar J.D SAS</h2>
+    <p class="section-sub">
+      Te acompañamos en todo el proceso: desde el estudio de viabilidad hasta la instalación y el mantenimiento
+      de tu sistema solar.
+    </p>
+
+    <div class="grid">
+      <div class="card fade-in">
+        <div class="card-icon">🏠</div>
+        <h3>Sistemas solares para hogares</h3>
+        <p>
+          Diseñamos sistemas conectados a red o híbridos para que reduzcas tu factura de energía
+          sin sacrificar confort. Ideal para casas en ciudad o en zonas rurales con buen recurso solar.
+        </p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🌾</div>
+        <h3>Soluciones solares para fincas</h3>
+        <p>
+          Bombeo de agua, iluminación, cercas eléctricas y cargas básicas sin depender de plantas diésel.
+          Mayor autonomía y menor gasto en combustible.
+        </p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🏢</div>
+        <h3>Proyectos solares empresariales</h3>
+        <p>
+          Reducimos costos operativos con techos solares para bodegas, comercios y empresas,
+          mejorando además la imagen sostenible de tu negocio.
+        </p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🛠️</div>
+        <h3>Mantenimiento y monitoreo</h3>
+        <p>
+          Limpieza, revisión técnica, diagnóstico y optimización de sistemas solares existentes para que
+          siempre trabajen al máximo rendimiento.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA DE AHORRO -->
+  <section id="ahorro" class="fade-in">
+    <h2>Calcula tu ahorro aproximado</h2>
+    <p class="section-sub">
+      Ingresa tu valor promedio de factura de energía y te mostramos un rango estimado de ahorro con
+      un sistema solar bien dimensionado. Para una propuesta real, contáctanos y hacemos un estudio detallado.
+    </p>
+
+    <div class="calculator">
+      <div class="calc-box fade-in">
+        <h3>Estimación rápida</h3>
+        <p style="font-size:0.9rem; color:var(--text-muted);">
+          Mueve la barra según tu factura promedio mensual de energía.
+        </p>
+
+        <div class="calc-input">
+          <label for="billRange">Factura mensual aproximada (COP):</label>
+          <span id="billValue">$ 400.000</span>
+          <input type="range" id="billRange" min="150000" max="2000000" step="50000" value="400000">
+        </div>
+
+        <div class="calc-results">
+          <p>💰 Ahorro mensual estimado: <strong id="savingMonthly">$ 140.000</strong></p>
+          <p>🌞 Ahorro en 10 años (aprox.): <strong id="savingTenYears">$ 16.800.000</strong></p>
+        </div>
+
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.6rem;">
+          *Estimación entre 30% y 40% de ahorro, depende de tu perfil de consumo, ubicación y tipo de sistema.
+          Para una simulación exacta escríbenos por WhatsApp y te asesoramos sin costo.
+        </p>
+
+        <div style="margin-top:0.8rem;">
+          <a href="https://wa.me/573102062936?text=Hola%2C%20vi%20la%20calculadora%20solar%20y%20quiero%20saber%20cu%C3%A1nto%20puedo%20ahorrar%20en%20mi%20caso."
+             class="btn btn-primary">Enviar mis datos por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <h3>¿Por qué un sistema solar se paga solo?</h3>
+        <p>
+          En muchos casos, la cuota mensual del sistema solar puede ser similar a lo que hoy pagas de
+          energía, pero en pocos años la instalación queda paga y el ahorro se queda en tu bolsillo.
+        </p>
+        <p style="margin-top:0.5rem;">
+          Además:
+        </p>
+        <ul style="font-size:0.9rem; color:var(--text-muted); margin-left:1rem; margin-top:0.3rem;">
+          <li>✔ Proteges tu hogar, finca o empresa de futuros incrementos en la tarifa eléctrica.</li>
+          <li>✔ Aumentas el valor de tu propiedad.</li>
+          <li>✔ Aportas directamente a la reducción de CO₂ y al cuidado del planeta.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="fade-in">
+    <h2>Proyectos y aplicaciones</h2>
+    <p class="section-sub">
+      Estas son algunas aplicaciones típicas que trabajamos con nuestros clientes. Imagina algo similar
+      instalado en tu techo, empresa o finca.
+    </p>
+
+    <div class="grid">
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Sistema solar residencial en techo">
+        </div>
+        <h3>Vivienda residencial urbana</h3>
+        <p>
+          Sistema conectado a red que reduce la factura mensual entre un 30% y un 40% sin cambiar hábitos
+          de consumo.
+        </p>
+      </div>
+
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="https://images.pexels.com/photos/8853507/pexels-photo-8853507.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Sistema solar en finca rural">
+        </div>
+        <h3>Finca ganadera en zona rural</h3>
+        <p>
+          Bombeo de agua y cargas básicas con energía solar, reduciendo el uso de plantas a combustible
+          y el ruido constante.
+        </p>
+      </div>
+
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="https://images.pexels.com/photos/9875443/pexels-photo-9875443.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Techo solar en empresa">
+        </div>
+        <h3>Techo industrial en empresa</h3>
+        <p>
+          Sistema solar en techo de bodega para disminuir costos operativos y lograr una operación más
+          sostenible ante clientes e inversionistas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA EDITABLE -->
+  <section id="galeria" class="fade-in">
+    <h2>Galería de proyectos</h2>
+    <p class="section-sub">
+      Aquí puedes mostrar más fotos de tus instalaciones. Solo debes copiar o borrar tarjetas según lo que quieras mostrar.
+    </p>
+    <p class="gallery-note">
+      Esta sección es fácil de editar: copia y pega tarjetas para agregar más fotos, o bórralas para quitar.
+      La imagen de la bomba sumergible solar usa un archivo local <strong>img/bomba-sumergible-solar.jpg</strong>.
+    </p>
+
+    <div class="grid">
+      <!-- FOTO 1 GALERÍA -->
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="https://images.pexels.com/photos/9875442/pexels-photo-9875442.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Instalación solar en tejado de vivienda">
+        </div>
+        <h3>Techo de vivienda en Granada</h3>
+        <p>Sistema residencial con estructura en teja, optimizado para máximo rendimiento.</p>
+      </div>
+
+      <!-- FOTO 2 GALERÍA - BOMBA SUMERGIBLE SOLAR -->
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="img/bomba-sumergible-solar.jpg"
+               alt="Bomba sumergible solar para riego y ganado">
+        </div>
+        <h3>Bomba sumergible solar</h3>
+        <p>Sistema de bombeo solar sumergible ideal para riego y abastecimiento de agua en fincas ganaderas.</p>
+      </div>
+
+      <!-- FOTO 3 GALERÍA -->
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="https://images.pexels.com/photos/9875449/pexels-photo-9875449.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Paneles solares cercanía ciudad">
+        </div>
+        <h3>Proyecto cerca a zona urbana</h3>
+        <p>Solución mixta para apoyar consumo residencial y área de negocio.</p>
+      </div>
+
+      <!--
+      PARA AGREGAR UNA NUEVA FOTO:
+      1. Copia desde "<div class="card">" hasta "</div>" de uno de los bloques anteriores.
+      2. Pégalo debajo de este comentario.
+      3. Cambia el src de la imagen y los textos.
+      -->
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS / PROCESO -->
+  <section id="ventajas" class="fade-in">
+    <h2>¿Por qué elegir Energy Solar J.D SAS?</h2>
+    <p class="section-sub">
+      No vendemos solo paneles: diseñamos soluciones completas, claras y pensadas para que tu inversión
+      se recupere rápido.
+    </p>
+
+    <div class="grid">
+      <div class="card fade-in">
+        <div class="card-icon">📊</div>
+        <h3>Estudios a la medida</h3>
+        <p>Analizamos tu consumo, ubicación y tipo de techo para dimensionar un sistema realmente eficiente.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🧾</div>
+        <h3>Propuesta clara y sin letra pequeña</h3>
+        <p>Explicamos inversión, tiempos de retorno y beneficios con números fáciles de entender.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🔧</div>
+        <h3>Instalación profesional</h3>
+        <p>Buenas prácticas eléctricas, soportes seguros y equipos de marcas reconocidas.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🔍</div>
+        <h3>Acompañamiento post-venta</h3>
+        <p>Te enseñamos a leer tu generación, monitoreamos el sistema y resolvemos dudas después de la instalación.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:3rem;">Nuestro proceso de trabajo</h2>
+    <p class="section-sub">Así llevamos tu proyecto desde la idea hasta un sistema funcionando en tu techo.</p>
+
+    <div class="steps">
+      <div class="step fade-in">
+        <h3>1. Diagnóstico inicial</h3>
+        <p>Revisamos tu consumo actual, ubicación, tipo de techo y objetivo (hogar, finca o empresa).</p>
+      </div>
+      <div class="step fade-in">
+        <h3>2. Diseño y cotización</h3>
+        <p>Armamos una propuesta con equipos, potencia del sistema, inversión estimada y tiempo de retorno.</p>
+      </div>
+      <div class="step fade-in">
+        <h3>3. Instalación y puesta en marcha</h3>
+        <p>Ejecutamos la instalación con nuestro equipo y dejamos el sistema funcionando y monitoreado.</p>
+      </div>
+      <div class="step fade-in">
+        <h3>4. Soporte y mantenimiento</h3>
+        <p>Te acompañamos en el uso del sistema, ajustes finos y mantenimiento preventivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="fade-in">
+    <h2>Productos y kits solares</h2>
+    <p class="section-sub">
+      Aquí puedes mostrar los productos que vendes: kits completos, paneles, inversores, baterías, etc.
+      Solo edita, agrega o elimina tarjetas según lo que tengas disponible.
+    </p>
+    <p class="gallery-note">
+      Para agregar un producto nuevo, duplica una tarjeta de abajo y cambia imagen, nombre, descripción, precio y enlace.
+    </p>
+
+    <div class="grid">
+      <!-- PRODUCTO 1 -->
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="https://images.pexels.com/photos/9875442/pexels-photo-9875442.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Kit solar domiciliario">
+        </div>
+        <h3>Kit Solar Hogar 1–2 kW</h3>
+        <p class="product-meta">Ideal para casas con consumo medio. Incluye paneles, estructura, inversor y protecciones.</p>
+        <p class="product-price">Desde: Consultar precio</p>
+        <p style="font-size:0.85rem; color:var(--text-muted);">
+          ✔ Apto para nevera, luces, TV y cargas básicas.  
+          ✔ Expandible según necesidad.
+        </p>
+        <a class="btn btn-outline" href="https://wa.me/573102062936?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20Kit%20Solar%20Hogar%201-2kW">Quiero este kit</a>
+      </div>
+
+      <!-- PRODUCTO 2 - BOMBA SUMERGIBLE SOLAR -->
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="img/bomba-sumergible-solar.jpg"
+               alt="Kit de bomba sumergible solar para finca">
+        </div>
+        <h3>Kit Bomba Sumergible Solar para Finca</h3>
+        <p class="product-meta">Sistema pensado para bombeo de agua en pozos y jagüeyes para ganado y riego.</p>
+        <p class="product-price">Desde: Consultar precio</p>
+        <p style="font-size:0.85rem; color:var(--text-muted);">
+          ✔ Reduce uso de gasolina o diésel.  
+          ✔ Ideal para ganadería, riego y acueductos veredales.
+        </p>
+        <a class="btn btn-outline" href="https://wa.me/573102062936?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20Kit%20Bomba%20Sumergible%20Solar%20para%20Finca">Consultar detalles</a>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="card fade-in">
+        <div class="project-img">
+          <img class="zoomable"
+               src="https://images.pexels.com/photos/9875443/pexels-photo-9875443.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               alt="Kit solar empresarial">
+        </div>
+        <h3>Kit Solar Empresarial 5–10 kW</h3>
+        <p class="product-meta">Para pequeñas y medianas empresas que quieren bajar costos fijos.</p>
+        <p class="product-price">Desde: Consultar precio</p>
+        <p style="font-size:0.85rem; color:var(--text-muted);">
+          ✔ Disminuye el costo operativo mensual.  
+          ✔ Mejora la imagen sostenible ante clientes.
+        </p>
+        <a class="btn btn-outline" href="https://wa.me/573102062936?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20Kit%20Solar%20Empresarial%205-10kW">Cotizar para mi empresa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="fade-in">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <p class="section-sub">
+      Clientes de hogares, fincas y empresas que ya están ahorrando con sistemas solares.
+    </p>
+
+    <div class="testimonials">
+      <div class="testimonial fade-in">
+        <p>
+          “Desde que instalamos los paneles en nuestra casa en Granada, la factura bajó muchísimo.
+          El equipo explicó todo súper claro y cumplieron con los tiempos.”
+        </p>
+        <div class="testimonial-name">Carlos A.</div>
+        <div class="testimonial-meta">Hogar residencial · Granada Meta</div>
+      </div>
+      <div class="testimonial fade-in">
+        <p>
+          “En la finca ahora bombeamos agua con energía solar y casi no usamos la planta.
+          El ahorro en gasolina se nota mes a mes.”
+        </p>
+        <div class="testimonial-name">Finca El Mirador</div>
+        <div class="testimonial-meta">Zona rural · Sistema para bombeo de agua</div>
+      </div>
+      <div class="testimonial fade-in">
+        <p>
+          “La imagen de la empresa mejoró mucho con el techo solar y al mismo tiempo
+          bajamos costos de operación. Excelente acompañamiento.”
+        </p>
+        <div class="testimonial-name">Comercializadora local</div>
+        <div class="testimonial-meta">Techo industrial · Meta</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="fade-in">
+    <h2>Preguntas frecuentes</h2>
+    <p class="section-sub">Resolvemos las dudas más comunes antes de empezar tu proyecto.</p>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>💸 ¿En cuánto tiempo se paga un sistema solar?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        En muchos casos el retorno de la inversión puede estar entre 4 y 7 años, dependiendo de tu consumo,
+        tarifa actual y tipo de sistema. Desde ahí en adelante, prácticamente es ahorro puro.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>⚡ ¿Qué pasa si no hay sol o está nublado?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Los paneles siguen generando incluso con nubosidad, aunque a menor potencia. El sistema se diseña
+        considerando el promedio de radiación de la zona para asegurar un desempeño estable durante el año.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>🏦 ¿Puedo financiar el sistema?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Existen diferentes opciones de financiación a través de entidades bancarias y convenios. Te orientamos
+        para que compares alternativas y puedas pagar el sistema con parte del mismo ahorro en la factura.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>🛠️ ¿Qué mantenimiento requiere?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Principalmente limpieza periódica de paneles y una revisión técnica cada cierto tiempo.
+        Te ofrecemos planes de mantenimiento para que tu sistema siempre trabaje al máximo.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="fade-in">
+    <h2>Contáctanos</h2>
+    <p class="section-sub">
+      Cuéntanos sobre tu hogar, finca o empresa y te ayudamos a definir el sistema solar adecuado para ti.
+    </p>
+
+    <div class="contact-wrapper">
+      <div class="contact-form fade-in">
+        <h3>Solicita tu estudio inicial</h3>
+        <form action="mailto:contacto@energysolarjd.com" method="post" enctype="text/plain">
+          <label>Nombre completo</label>
+          <input type="text" name="Nombre" placeholder="Ej: Juan Pérez" required>
+
+          <label>Teléfono / WhatsApp</label>
+          <input type="tel" name="Telefono" placeholder="Ej: 3102062936" required>
+
+          <label>Ciudad / Municipio</label>
+          <input type="text" name="Ciudad" placeholder="Ej: Granada Meta" value="Granada Meta">
+
+          <label>Tipo de proyecto</label>
+          <select name="Tipo de proyecto">
+            <option value="Hogar">Hogar</option>
+            <option value="Finca">Finca</option>
+            <option value="Empresa">Empresa</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <label>Describe brevemente tu necesidad</label>
+          <textarea name="Mensaje" placeholder="Cuéntanos tu consumo aproximado, si tienes recibo de energía a la mano, tipo de techo, etc."></textarea>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.3rem;">
+            Enviar datos por correo
+          </button>
+        </form>
+
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem;">
+          Si lo prefieres, también puedes copiar este texto y enviarlo directo por WhatsApp.
+        </p>
+      </div>
+
+      <div class="contact-info fade-in">
+        <p><strong>WhatsApp general:</strong> <a href="https://wa.me/573102062936" target="_blank">+57 310 206 2936</a></p>
+        <p><strong>Ingeniero:</strong> Yeison muñoz – <a href="tel:+573162928507">+57 316 292 8507</a></p>
+        <p><strong>Email:</strong> <a href="mailto:contacto@energysolarjd.com">contacto@energysolarjd.com</a></p>
+        <p><strong>Ciudad:</strong> Granada, Meta – Colombia</p>
+        <p><strong>Sitio web:</strong> https://energysolarjd.com</p>
+        <p><strong>Horario:</strong> Lunes a sábado, 8:00 a.m. – 6:00 p.m.</p>
+
+        <p style="margin-top:0.8rem;"><strong>Ubicación de referencia:</strong></p>
+        <p style="margin-bottom:0.5rem;">
+          Atendemos proyectos en Granada Meta y municipios cercanos. También coordinamos visitas y estudios
+          en otras regiones de Colombia.
+        </p>
+
+        <!-- Mapa (puedes ajustar la ubicación aproximada en Google Maps más adelante) -->
+        <iframe
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.692874597813!2d-73.699!3d3.544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e8a4c5fbd9c2d%3A0x8a7ecb7bbfca!2sGranada%2C%20Meta!5e0!3m2!1ses-CO!2sco!4v1700000000000">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Energy Solar J.D SAS — Granada Meta, Colombia. Todos los derechos reservados.
+</footer>
+
+<!-- BOTONES FLOTANTES -->
+<div class="whatsapp-float">
+  <a href="https://wa.me/573102062936?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20energ%C3%ADa%20solar%20para%20mi%20propiedad"
+     target="_blank" aria-label="Chatear por WhatsApp">
+    🟢
+  </a>
+</div>
+
+<div id="backToTop">↑</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <div id="lightbox-close">✕</div>
+  <img id="lightbox-img" src="" alt="Imagen ampliada">
+</div>
+
+<script>
+  // Año dinámico en el footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Menú móvil
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  menuToggle.addEventListener('click', () => {
+    mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+  });
+
+  // Calculadora de ahorro
+  const billRange = document.getElementById('billRange');
+  const billValue = document.getElementById('billValue');
+  const savingMonthly = document.getElementById('savingMonthly');
+  const savingTenYears = document.getElementById('savingTenYears');
+
+  function formatCOP(value) {
+    return value.toLocaleString('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 });
+  }
+
+  function updateSavings() {
+    const bill = parseInt(billRange.value, 10) || 0;
+    billValue.textContent = formatCOP(bill);
+    const saving = Math.round(bill * 0.35); // 35% promedio
+    const tenYears = saving * 12 * 10;
+    savingMonthly.textContent = formatCOP(saving);
+    savingTenYears.textContent = formatCOP(tenYears);
+  }
+
+  billRange.addEventListener('input', updateSavings);
+  updateSavings();
+
+  // Botón volver arriba
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      backToTop.style.display = 'flex';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Lightbox para imágenes (logo + proyectos + hero + galería + productos)
+  const zoomables = document.querySelectorAll('.zoomable');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  zoomables.forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target === lightboxClose) {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+  });
+
+  // FAQ acordeón
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const q = item.querySelector('.faq-question');
+    const a = item.querySelector('.faq-answer');
+    q.addEventListener('click', () => {
+      const isOpen = a.style.display === 'block';
+      document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+      document.querySelectorAll('.faq-question span:last-child').forEach(icon => icon.textContent = '+');
+      if (!isOpen) {
+        a.style.display = 'block';
+        q.querySelector('span:last-child').textContent = '−';
+      }
+    });
+  });
+
+  // Animaciones de aparición (fade-in)
+  const faders = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  faders.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
